@@ -37,7 +37,7 @@ public class Utils {
      */
     public static boolean validarOperador(String op){
         
-        if (!(op.equals("+") || op.equals("-") || op.equals("x") || op.equals("/"))) 
+        if (!(op.equals("+") || op.equals("-") || op.equals("x") || op.equals("/") || op.equals("!") || op.equals("sin") || op.equals("inv")))
             return false;
         return true;
     }
