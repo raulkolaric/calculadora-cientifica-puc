@@ -7,21 +7,19 @@ import java.lang.Math;
  * @version 11/03/2026
  */
 
-public class CalcCientifica
-{
+public class CalcCientifica {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
      * Constructor for objects of class CalcCientifica
      */
-    public double calcular(String oper, String opnd1)
-    {
-        //locais
+    public double calcular(String oper, String opnd1) {
+        // locais
         double operando1 = Double.parseDouble(opnd1);
         double result = 0;
-        
-        switch(oper) {
+
+        switch (oper) {
             case "!": // operacao fatorial
                 result = fatorial(operando1);
                 break;
@@ -34,46 +32,67 @@ public class CalcCientifica
             case "inv": // operacao inv
                 result = inv(operando1);
                 break;
+            case "tan": // operacao tan
+                result = tan(operando1);
+                break;
         }
         return result;
     }
 
     /**
-     * Método fatorial - calcula o produto de todos os números inteiros positivos de 1 até n
+     * Método fatorial - calcula o produto de todos os números inteiros positivos de
+     * 1 até n
+     * 
      * @param a double parametro 1
      * @return double resultado da operação
      */
-    public static double fatorial(double a){
-        int res = 1, i;
+
+    public static double fatorial(double a) {
+        double res = 1;
+        int i;
         for (i = 2; i <= a; i++)
             res *= i;
         return res;
     }
-    
+
     /**
      * Método seno - calcula o seno de todos os números inteiros positivos
+     * 
      * @param a double parametro 1
      * @return double resultado da operação
      */
-    public static double seno(double a){
-        return Math.sin(a);
+    public static double seno(double a) {
+        return Math.sin(Math.toRadians(a));
     }
 
     /**
      * Método cos - calcula o cosseno de todos os números inteiros positivos
+     * 
      * @param a double parametro 1
      * @return double resultado da operação
      */
-    public static double cos(double a){
-        return Math.cos(a);
+    public static double cos(double a) {
+        return Math.cos(Math.toRadians(a));
     }
 
     /**
      * Método inv - calcula o inverso de todos os números inteiros positivos
+     * 
      * @param a double parametro 1
      * @return double resultado da operação
      */
-    public static double inv(double a){
-        return (1/a);
+    public static double inv(double a) {
+        return (1 / a);
     }
+
+    /**
+     * Método tan - calcula a tangente de todos os números inteiros positivos
+     * 
+     * @param a double parametro 1
+     * @return double resultado da operação
+     */
+    public static double tan(double a) {
+        return Math.tan(Math.toRadians(a));
+    }
+
 }

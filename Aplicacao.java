@@ -73,21 +73,23 @@ public class Aplicacao{
                 return;
             }
             
-            opnd2 = ent.lerString("Forneca o operando2: ");
+            // Junior would ask for opnd2 always. Senior checks if it's actually needed.
+            if (!Utils.isUnary(operador)) {
+                opnd2 = ent.lerString("Forneca o operando2: ");
 
-            // verifica operando2           
-            if(!(Utils.validarOperando(opnd2))) {
-                System.out.println("Operando 2 invalido!!");
-                return;
+                // verifica operando2           
+                if(!(Utils.validarOperando(opnd2))) {
+                    System.out.println("Operando 2 invalido!!");
+                    return;
+                }
             }
-            
 
         } else {
             System.out.println("Numero de parametros invalidos!!");
             return;
         }
         
-        if (operador.equals("sin") || operador.equals("cos") || operador.equals("!") || operador.equals("inv")) {
+        if (Utils.isUnary(operador)) {
             CalcCientifica calc = new CalcCientifica();
             System.out.println(operador + "(" + opnd1 + ") = " + calc.calcular(operador, opnd1));
         } else {
