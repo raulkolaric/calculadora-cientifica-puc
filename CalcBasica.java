@@ -1,10 +1,11 @@
 
 /**
- * Calculadora de 4 operacoes (+, -, x, /) basicas.
+ * Calculadora de 4 operacões (+, -, x, /) basicas.
  * 
- * @author Julio Arakaki
- * @version 19/03/2025
+ * @authors Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @version 11/03/2026
  */
+
 public class CalcBasica {
     /**
      * Método calcular - realiza o calculo das 4 operações básicas

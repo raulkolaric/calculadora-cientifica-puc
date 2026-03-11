@@ -1,9 +1,10 @@
 /**
- * Write a description of class CalcCientifica here.
+ * Lógica da calculadora cientifica.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @authors Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @version 11/03/2026
  */
+
 public class CalcCientifica
 {
     // instance variables - replace the example below with your own
@@ -12,10 +13,11 @@ public class CalcCientifica
     /**
      * Constructor for objects of class CalcCientifica
      */
-    public CalcCientifica()
+    public double CalcCientifica(String oper, String opnd1)
     {
         // initialise instance variables
         x = 0;
+        return 0;
     }
 
     /**

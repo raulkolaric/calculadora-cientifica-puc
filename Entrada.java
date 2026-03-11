@@ -3,9 +3,10 @@ import java.util.Scanner;
 /**
  * Classe principal.
  * 
- * @author Julio Arakaki 
- * @version 20250310
+ * @authors Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @version 11/03/2026
  */
+
 public class Entrada {
 
     /**
