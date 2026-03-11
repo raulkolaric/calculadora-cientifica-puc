@@ -40,6 +40,20 @@ public class Aplicacao{
                 return;
             }
 
+        } else if (tam == 2){
+            opnd1 = args[0];
+            operador = args[1];
+            // verifica operador
+            if(!Utils.validarOperador(operador)) {
+                System.out.println("Operador invalido!!");
+                return;
+            }
+            // verifica operando 1
+            if(!(Utils.validarOperando(opnd1))) {
+                System.out.println("Operando 1 invalido!!");
+                return;
+            }       
+            
         } else if (tam == 0){ // Nao utiliza linha de comando
             
             // Entrada pelo teclado (console)
@@ -71,12 +85,14 @@ public class Aplicacao{
         } else {
             System.out.println("Numero de parametros invalidos!!");
             return;
-        }   
+        }
         
-        // Instancia (cria) objeto da classe Calculadora
-        CalcBasica calc = new CalcBasica();
-                
-        System.out.print ("("+opnd1 + " " + operador + " " + opnd2 + ") = ");
-        System.out.println (calc.calcular(opnd1, operador, opnd2));
+        if (operador.equals("sin") || operador.equals("cos") || operador.equals("!") || operador.equals("inv")) {
+            CalcCientifica calc = new CalcCientifica();
+            System.out.println(operador + "(" + opnd1 + ") = " + calc.calcular(operador, opnd1));
+        } else {
+            CalcBasica calc = new CalcBasica();
+            System.out.println("(" + opnd1 + " " + operador + " " + opnd2 + ") = " + calc.calcular(opnd1, operador, opnd2));
+        }
     }
 }

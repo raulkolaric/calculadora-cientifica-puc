@@ -29,16 +29,18 @@ public class Utils {
         }            
         return true;
     }
+    
     /**
      * Método validarOperador - verifica se o operador eh valido
      *
      * @param op String contendo o operador
-     * @return false se for diferente de (+,-,x,/) e true caso contrario
+     * @return false se for diferente de (+,-,x,/, !, sin, inv) e true caso contrario
      */
     public static boolean validarOperador(String op){
         
-        if (!(op.equals("+") || op.equals("-") || op.equals("x") || op.equals("/") || op.equals("!") || op.equals("sin") || op.equals("inv")))
+        if (!(op.equals("+") || op.equals("-") || op.equals("x") || op.equals("/") || op.equals("!") || op.equals("sin") || op.equals("inv")|| op.equals("cos")))
             return false;
         return true;
     }
+
 }
