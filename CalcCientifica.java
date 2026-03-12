@@ -10,6 +10,7 @@ import java.lang.Math;
 public class CalcCientifica {
     /**
      * Constructor for objects of class CalcCientifica
+     * @param 
      */
     public double calcular(String oper, String opnd1) {
         // locais

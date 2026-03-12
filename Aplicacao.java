@@ -14,6 +14,9 @@ public class Aplicacao{
         String opnd2 = "";
         String operador = "";
         double result = 0;
+        //Inicia o objeto CalcCientifica
+        CalcCientifica calc = new CalcCientifica();
+
 
         // armazena o tamanho do vetor de string (args) - qtde de parametros
         int tam = args.length; 
@@ -73,7 +76,6 @@ public class Aplicacao{
                 return;
             }
             
-            // Junior would ask for opnd2 always. Senior checks if it's actually needed.
             if (!Utils.isUnary(operador)) {
                 opnd2 = ent.lerString("Forneca o operando2: ");
 
@@ -87,14 +89,6 @@ public class Aplicacao{
         } else {
             System.out.println("Numero de parametros invalidos!!");
             return;
-        }
-        
-        if (Utils.isUnary(operador)) {
-            CalcCientifica calc = new CalcCientifica();
-            System.out.println(operador + "(" + opnd1 + ") = " + calc.calcular(operador, opnd1));
-        } else {
-            CalcCientifica calc = new CalcCientifica();
-            System.out.println("(" + opnd1 + " " + operador + " " + opnd2 + ") = " + calc.calcular(opnd1, operador, opnd2));
         }
     }
 }
