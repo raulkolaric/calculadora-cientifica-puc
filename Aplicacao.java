@@ -93,7 +93,7 @@ public class Aplicacao{
             CalcCientifica calc = new CalcCientifica();
             System.out.println(operador + "(" + opnd1 + ") = " + calc.calcular(operador, opnd1));
         } else {
-            CalcBasica calc = new CalcBasica();
+            CalcCientifica calc = new CalcCientifica();
             System.out.println("(" + opnd1 + " " + operador + " " + opnd2 + ") = " + calc.calcular(opnd1, operador, opnd2));
         }
     }

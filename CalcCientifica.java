@@ -8,9 +8,6 @@ import java.lang.Math;
  */
 
 public class CalcCientifica {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class CalcCientifica
      */
@@ -93,6 +90,19 @@ public class CalcCientifica {
      */
     public static double tan(double a) {
         return Math.tan(Math.toRadians(a));
+    }
+    
+    public double calcular(String opnd1, String oper, String opnd2) {
+        
+        double operando1 = Double.parseDouble(opnd1);
+        double operando2 = Double.parseDouble(opnd2);
+        double result = 0;
+        
+        CalcBasica calcBasica = new CalcBasica();
+        
+        result = calcBasica.calcular(opnd1, oper, opnd2);
+        
+        return result;
     }
 
 }
