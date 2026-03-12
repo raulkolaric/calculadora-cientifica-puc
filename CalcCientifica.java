@@ -14,8 +14,8 @@ public class CalcCientifica {
      * @param opnd1 O valor numérico como String.
      * @return      O resultado da operação.
      */
-    public double calcular(String oper, String opnd1) {
-        //variaveis local
+    public void calcular(String oper, String opnd1) {
+        // locais
         double operando1 = Double.parseDouble(opnd1);
         double result = 0;
 
@@ -36,7 +36,8 @@ public class CalcCientifica {
                 result = tan(operando1);
                 break;
         }
-        return result;
+        System.out.println(oper + "(" + opnd1 + ") = " + result);
+        
     }
 
     /**
@@ -112,7 +113,8 @@ public class CalcCientifica {
         
         result = calcBasica.calcular(opnd1, oper, opnd2);
         
-        return result;
+        System.out.println("(" + opnd1 + " " + oper + " " + opnd2 + ") = " + result);
+        
     }
 
 }

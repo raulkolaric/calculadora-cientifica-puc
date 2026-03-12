@@ -96,5 +96,15 @@ public class Aplicacao{
             System.out.println("Numero de parametros invalidos!!");
             return;
         }
+        
+        
+        if (Utils.isUnary(operador)) {
+            CalcCientifica calc = new CalcCientifica();
+            calc.calcular(operador, opnd1);
+        } else {
+            CalcCientifica calc = new CalcCientifica();
+            calc.calcular(opnd1, operador, opnd2);
+        }
+        
     }
 }
