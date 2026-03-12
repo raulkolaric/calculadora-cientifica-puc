@@ -3,17 +3,19 @@ import java.lang.Math;
 /**
  * Lógica da calculadora cientifica.
  *
- * @authors Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @author Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
  * @version 11/03/2026
  */
 
 public class CalcCientifica {
     /**
-     * Constructor for objects of class CalcCientifica
-     * @param 
+     * Realiza uma operação científica unitária (um operando).
+     * * @param oper  O símbolo da operação ("!", "sin", "cos", "inv", "tan").
+     * @param opnd1 O valor numérico como String.
+     * @return      O resultado da operação.
      */
     public double calcular(String oper, String opnd1) {
-        // locais
+        //variaveis local
         double operando1 = Double.parseDouble(opnd1);
         double result = 0;
 
@@ -93,6 +95,13 @@ public class CalcCientifica {
         return Math.tan(Math.toRadians(a));
     }
     
+    /**
+     * Realiza uma operação básica entre dois operandos utilizando a CalcBasica.
+     * * @param opnd1 Primeiro valor.
+     * @param oper  Operador básico (+, -, *, /).
+     * @param opnd2 Segundo valor.
+     * @return      O resultado da conta.
+     */
     public double calcular(String opnd1, String oper, String opnd2) {
         
         double operando1 = Double.parseDouble(opnd1);

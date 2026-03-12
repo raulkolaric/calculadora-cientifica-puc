@@ -1,19 +1,25 @@
 import java.util.Scanner;
 
 /**
- * Aplicação para testar a Calculadora de 4 
- * operacoes basicas.
+ * Ponto de entrada da aplicação para a Calculadora Científica.
+ * Permite a execução via linha de comando (CLI) ou interação via console.
  * 
- * @author Julio Arakaki
- * @version 19/03/2025
+ * @author Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @version 12/03/2026
  */
 public class Aplicacao{
+    /**
+     * Método principal que gerencia o fluxo de entrada e saída.
+     * * @param args Argumentos da linha de comando:
+     * - 3 argumentos: [opnd1] [oper] [opnd2] (Binário)
+     * - 2 argumentos: [opnd1] [oper] (Unitário)
+     * - 0 argumentos: Inicia modo interativo.
+     */
     public static void main(String args[]){
         // Variaveis locais
         String opnd1 = "";
         String opnd2 = "";
         String operador = "";
-        double result = 0;
         //Inicia o objeto CalcCientifica
         CalcCientifica calc = new CalcCientifica();
 

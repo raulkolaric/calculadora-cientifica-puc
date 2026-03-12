@@ -2,7 +2,7 @@
 /**
  * Calculadora de 4 operacões (+, -, x, /) basicas.
  * 
- * @authors Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
+ * @author Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
  * @version 11/03/2026
  */
 
