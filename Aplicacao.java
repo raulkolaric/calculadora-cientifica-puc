@@ -99,10 +99,8 @@ public class Aplicacao{
         
         
         if (Utils.isUnary(operador)) {
-            CalcCientifica calc = new CalcCientifica();
             calc.calcular(operador, opnd1);
         } else {
-            CalcCientifica calc = new CalcCientifica();
             calc.calcular(opnd1, operador, opnd2);
         }
         

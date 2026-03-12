@@ -49,6 +49,10 @@ public class CalcCientifica {
      */
 
     public static double fatorial(double a) {
+        /*
+        Esta função calcula o fatorial de um número de forma iterativa, 
+        utilizando um laço for para multiplicar os valores de 2 até a.
+        */
         double res = 1;
         int i;
         for (i = 2; i <= a; i++)
@@ -103,7 +107,7 @@ public class CalcCientifica {
      * @param opnd2 Segundo valor.
      * @return      O resultado da conta.
      */
-    public double calcular(String opnd1, String oper, String opnd2) {
+    public void calcular(String opnd1, String oper, String opnd2) {
         
         double operando1 = Double.parseDouble(opnd1);
         double operando2 = Double.parseDouble(opnd2);
