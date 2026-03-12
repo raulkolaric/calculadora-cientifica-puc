@@ -89,12 +89,14 @@ public class Aplicacao{
             return;
         }
         
+        
         if (Utils.isUnary(operador)) {
             CalcCientifica calc = new CalcCientifica();
-            System.out.println(operador + "(" + opnd1 + ") = " + calc.calcular(operador, opnd1));
+            calc.calcular(operador, opnd1);
         } else {
             CalcCientifica calc = new CalcCientifica();
-            System.out.println("(" + opnd1 + " " + operador + " " + opnd2 + ") = " + calc.calcular(opnd1, operador, opnd2));
+            calc.calcular(opnd1, operador, opnd2);
         }
+        
     }
 }
