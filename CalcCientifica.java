@@ -11,7 +11,7 @@ public class CalcCientifica {
     /**
      * Constructor for objects of class CalcCientifica
      */
-    public double calcular(String oper, String opnd1) {
+    public void calcular(String oper, String opnd1) {
         // locais
         double operando1 = Double.parseDouble(opnd1);
         double result = 0;
@@ -33,7 +33,8 @@ public class CalcCientifica {
                 result = tan(operando1);
                 break;
         }
-        return result;
+        System.out.println(oper + "(" + opnd1 + ") = " + result);
+        
     }
 
     /**
@@ -92,7 +93,7 @@ public class CalcCientifica {
         return Math.tan(Math.toRadians(a));
     }
     
-    public double calcular(String opnd1, String oper, String opnd2) {
+    public void calcular(String opnd1, String oper, String opnd2) {
         
         double operando1 = Double.parseDouble(opnd1);
         double operando2 = Double.parseDouble(opnd2);
@@ -102,7 +103,8 @@ public class CalcCientifica {
         
         result = calcBasica.calcular(opnd1, oper, opnd2);
         
-        return result;
+        System.out.println("(" + opnd1 + " " + oper + " " + opnd2 + ") = " + result);
+        
     }
 
 }
