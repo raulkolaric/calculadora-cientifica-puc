@@ -20,9 +20,9 @@ public class Aplicacao{
         String opnd1 = "";
         String opnd2 = "";
         String operador = "";
+        
         //Inicia o objeto CalcCientifica
         CalcCientifica calc = new CalcCientifica();
-
 
         // armazena o tamanho do vetor de string (args) - qtde de parametros
         int tam = args.length; 

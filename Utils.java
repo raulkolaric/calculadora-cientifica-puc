@@ -2,8 +2,9 @@
  * Metodos utilitarios.
  * 
  * @author Kauã Bezerra, Liam Lopes, Raul Kolaric, Rodrigo Ward.
- * @version 11/03/2026
+ * @version 12/03/2026
  */
+
 public class Utils {
     /**
      * Método validarOperando - verifica se a string de entrada eh numerica
@@ -49,7 +50,7 @@ public class Utils {
      * Método isUnary - verifica se o operador é unário (apenas um operando)
      *
      * @param op String contendo o operador
-     * @return true se for unário (!, sin, inv, cos), false caso contrário
+     * @return true se for unário (!, sin, inv, cos, tan), false caso contrário
      */
     public static boolean isUnary(String op) {
         return op.equals("!") || op.equals("sin") || op.equals("inv") || op.equals("cos") || op.equals("tan");

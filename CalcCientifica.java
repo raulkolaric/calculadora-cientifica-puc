@@ -10,9 +10,8 @@ import java.lang.Math;
 public class CalcCientifica {
     /**
      * Realiza uma operação científica unitária (um operando).
-     * * @param oper  O símbolo da operação ("!", "sin", "cos", "inv", "tan").
+     * @param oper  O símbolo da operação ("!", "sin", "cos", "inv", "tan").
      * @param opnd1 O valor numérico como String.
-     * @return      O resultado da operação.
      */
     public void calcular(String oper, String opnd1) {
         // locais
@@ -37,7 +36,6 @@ public class CalcCientifica {
                 break;
         }
         System.out.println(oper + "(" + opnd1 + ") = " + result);
-        
     }
 
     /**
@@ -102,10 +100,9 @@ public class CalcCientifica {
     
     /**
      * Realiza uma operação básica entre dois operandos utilizando a CalcBasica.
-     * * @param opnd1 Primeiro valor.
+     * @param opnd1 Primeiro valor.
      * @param oper  Operador básico (+, -, *, /).
      * @param opnd2 Segundo valor.
-     * @return      O resultado da conta.
      */
     public void calcular(String opnd1, String oper, String opnd2) {
         

@@ -1,4 +1,3 @@
-
 /**
  * Calculadora de 4 operacões (+, -, x, /) basicas.
  * 
@@ -16,7 +15,6 @@ public class CalcBasica {
      * @return double resultado da operacao
      */
     public double calcular(String opnd1, String oper, String opnd2) {
-        
         // Variaveis locais
         double operando1 = Double.parseDouble(opnd1);
         double operando2 = Double.parseDouble(opnd2);
@@ -39,7 +37,6 @@ public class CalcBasica {
         
         // retorna resultado
         return result;
-        
     }
     
     /**
